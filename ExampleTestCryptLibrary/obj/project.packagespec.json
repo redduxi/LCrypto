@@ -1,0 +1,41 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "F:\\colege\\course4\\BlowFish\\ConsoleApp1\\ExampleTestCryptLibrary\\ExampleTestCryptLibrary.csproj",
+    "projectName": "ExampleTestCryptLibrary",
+    "projectPath": "F:\\colege\\course4\\BlowFish\\ConsoleApp1\\ExampleTestCryptLibrary\\ExampleTestCryptLibrary.csproj",
+    "outputPath": "F:\\colege\\course4\\BlowFish\\ConsoleApp1\\ExampleTestCryptLibrary\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "net472"
+    ],
+    "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "net472": {
+        "projectReferences": {
+          "F:\\colege\\course4\\BlowFish\\ConsoleApp1\\LibCrypt\\LibCrypt.csproj": {
+            "projectPath": "F:\\colege\\course4\\BlowFish\\ConsoleApp1\\LibCrypt\\LibCrypt.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "net472": {
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+    }
+  },
+  "runtimes": {
+    "win7-x86": {
+      "#import": []
+    }
+  }
+}
