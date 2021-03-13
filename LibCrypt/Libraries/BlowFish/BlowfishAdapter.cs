@@ -8,12 +8,6 @@ namespace ConsoleApp1
 
         public BlowfishAdapter(string keyInHex)
         {
-            
-            // byte[] byteArrayFromHexString = new byte[keyInHex.Length / 2];
-            // for (int i = 0; i < keyInHex.Length; i += 2)
-            //     byteArrayFromHexString[i / 2] = Convert.ToByte(keyInHex.Substring(i, 2), 16);
-            //
-            // Console.WriteLine(byteArrayFromHexString);
             _blowFish = new BlowFish(keyInHex);
         }
         

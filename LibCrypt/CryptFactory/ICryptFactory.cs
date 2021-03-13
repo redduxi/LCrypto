@@ -2,6 +2,6 @@
 {
     public interface ICryptFactory
     {
-        ICryptor CreateCryptor(ECryptAlgorythm crypt);
+        ICryptor CreateCryptor(ECryptAlgorithm crypt);
     }
 }

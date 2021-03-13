@@ -1,5 +1,7 @@
 ﻿using System;
 using ConsoleApp1;
+using System.Runtime.InteropServices;
+using System.Text;
 
 
 namespace ExampleTestCryptLibrary
@@ -8,17 +10,8 @@ namespace ExampleTestCryptLibrary
     {
         static void Main(string[] args)
         {
-
-            string text = Console.ReadLine();
-            
-            ICryptor cryptor = MyLibraryBuilder.Blowfish;
-            
-            var encrypt = cryptor.Encrypt(text);
-            Console.WriteLine(encrypt);
-            
-            var decrypt = cryptor.Decrypt(encrypt);
-            Console.WriteLine(decrypt);
-            
+            IHashing c = HashBuilder.SHA256;
+            c.Hashing("a");
         }
     }
 }

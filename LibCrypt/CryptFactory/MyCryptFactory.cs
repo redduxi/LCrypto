@@ -13,14 +13,14 @@ namespace ConsoleApp1
             _aesKeyProvider = aesKeyProvider;
         }
 
-        public ICryptor CreateCryptor(ECryptAlgorythm crypt)
+        public ICryptor CreateCryptor(ECryptAlgorithm crypt)
         {
             switch (crypt)
             {
-                case ECryptAlgorythm.BlowFish:
+                case ECryptAlgorithm.BlowFish:
                     return new BlowfishAdapter(_blowfishKeyProvider.GetBlowFishKey());
-                case ECryptAlgorythm.AES:
-                    return null;//_aesKeyProvider
+                case ECryptAlgorithm.AES:
+                    return null; //_aesKeyProvider
                 default:
                     throw new ArgumentOutOfRangeException(nameof(crypt), crypt, null);
             }

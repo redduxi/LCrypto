@@ -229,8 +229,7 @@ namespace ConsoleApp1
                 _random.GetBytes(_vector);
                 _set = true;
             }
-
-
+            
             if (text == null)
             {
                 throw new Exception("Empty value for encryption.");
@@ -478,7 +477,6 @@ namespace ConsoleApp1
             byte[] byteArrayFromHexString = new byte[hex.Length / 2];
             for (int i = 0; i < hex.Length; i += 2)
                 byteArrayFromHexString[i / 2] = Convert.ToByte(hex.Substring(i, 2), 16);
-            // Console.WriteLine(byteArrayFromHexString);
             return byteArrayFromHexString;
         }
     }
