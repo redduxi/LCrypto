@@ -46,5 +46,7 @@ cryptor.Hashing("a");
 ## Links to libraries
 
 SHA1.dll - https://github.com/redduxi/SHA1
+
 SHA224.dll - https://github.com/redduxi/SHA224
+
 SHA256.dll - https://github.com/redduxi/SHA256
