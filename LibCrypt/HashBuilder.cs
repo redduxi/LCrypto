@@ -25,5 +25,21 @@
                 return new MyHashFactory().CreateHashing(EHashAlgorithm.SHA256);
             }
         }
+        
+        public static IHashing SHA384
+        {
+            get
+            {
+                return new MyHashFactory().CreateHashing(EHashAlgorithm.SHA384);
+            }
+        }
+        
+        public static IHashing SHA512
+        {
+            get
+            {
+                return new MyHashFactory().CreateHashing(EHashAlgorithm.SHA512);
+            }
+        }
     }
 }

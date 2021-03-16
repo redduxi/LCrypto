@@ -1,8 +1,4 @@
-﻿using System;
-using ConsoleApp1;
-using System.Runtime.InteropServices;
-using System.Text;
-
+﻿using ConsoleApp1;
 
 namespace ExampleTestCryptLibrary
 {
@@ -10,8 +6,8 @@ namespace ExampleTestCryptLibrary
     {
         static void Main(string[] args)
         {
-            IHashing c = HashBuilder.SHA256;
-            c.Hashing("a");
+            IHashing sha512 = HashBuilder.SHA512;
+            sha512.Hashing("a");
         }
     }
 }

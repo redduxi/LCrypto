@@ -2,6 +2,7 @@
 using ConsoleApp1.Libraries;
 using ConsoleApp1.Libraries.SHA224;
 using ConsoleApp1.Libraries.SHA256;
+using ConsoleApp1.Libraries.SHA384;
 
 namespace ConsoleApp1
 {
@@ -24,6 +25,12 @@ namespace ConsoleApp1
                 break;
                 case EHashAlgorithm.SHA256:
                     return new SHA256Adapter();
+                break;
+                case EHashAlgorithm.SHA512:
+                    return new SHA512Adapter();
+                break;
+                case EHashAlgorithm.SHA384:
+                    return new SHA384Adapter();
                 default:
                     throw new ArgumentOutOfRangeException(nameof(hash), hash, null);
             }
